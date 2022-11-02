@@ -1,11 +1,23 @@
+@font-face {
+    font-family: Futura;
+    src: url('fonts/Futura-Normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Granjon;
+    src: url('fonts/Granjon.otf') format('truetype');
+}
 :root {
     --verde: #00A149;
     --blanco: #fff;
     --rojo: #881014;
     --negro: #000;
-    --titulos: 'Arima Madurai', cursive;
-    --parrafos: 'Mulish', sans-serif;
+    --negro-claro:#1b1b1b;
+    --titulos: 'Granjon';
+    --parrafos: 'Futura';
 }
+
+
 
 html {
     box-sizing: border-box;
@@ -20,4 +32,58 @@ body {
 
 *,*::after,*::before {
     box-sizing: inherit;
+}
+
+
+/*Globales*/
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+h1,h2 {
+    
+    font-family: var(--titulos);
+    
+}
+
+h3,p,a {
+    font-size: 11px;
+    font-family: var(--parrafos);
+}
+
+/*Encabezado*/
+
+.contenedor-navegacion {
+    background-color: var(--negro-claro);
+    position: relative;
+    z-index: 5;
+    height: 12rem;
+    margin-top: -3rem;
+}
+
+.contenido-navegacion {
+    width: 20rem;
+    height: 20rem;
+}
+
+.logo h2,.navegacion a {
+    /*Color texto encabezado*/
+    color: var(--blanco);
+    padding: 0px px;
+}
+
+.navegacion a{
+    
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-variant: small-caps;
+    font-size: 3rem;
+    margin: 3rem 0rem;
 }
