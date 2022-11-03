@@ -16,74 +16,87 @@
     --titulos: 'Granjon';
     --parrafos: 'Futura';
 }
-
-
-
-html {
-    box-sizing: border-box;
-    /*1 rem = 10px*/
-    font-size: 62.5%;
+body{  
+    margin: 0;
 }
 
-body {
-    font-size: 1.6rem;
-    overflow-x: hidden;
-}
-
-*,*::after,*::before {
-    box-sizing: inherit;
-}
-
-
-/*Globales*/
-
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 95%;
-}
-
-
-h1,h2 {
-    
-    font-family: var(--titulos);
-    
-}
-
-h3,p,a {
-    font-size: 11px;
-    font-family: var(--parrafos);
-}
-
-/*Encabezado*/
-
-.contenedor-navegacion {
-    background-color: var(--negro-claro);
-    position: relative;
-    z-index: 5;
-    height: 12rem;
-    margin-top: -3rem;
-}
-
-.contenido-navegacion {
-    width: 20rem;
-    height: 20rem;
-}
-
-.logo h2,.navegacion a {
-    /*Color texto encabezado*/
+a{
+    text-decoration: none;
     color: var(--blanco);
-    padding: 0px px;
+    
 }
 
-.navegacion a{
-    
-    align-content: center;
+.contenedor-navegacion{
+    background-color: var(--negro-claro);
+    z-index: 5;
+    flex-direction: column;
+
+}
+
+.contenedor-navegacion,.logo{
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.logo h2 {
-    font-variant: small-caps;
-    font-size: 3rem;
-    margin: 3rem 0rem;
+.logo{
+    color: var(--blanco);
+    height: 70px;
+    
 }
+
+.navegacion a{
+    font-weight: 600;
+    font-size: 11px;
+    font-weight: 50;
+    padding: 0px 10px;
+}
+
+nav{
+    height: 40px;
+}
+
+.navegacion a:hover{
+ color: #fff;   
+}
+
+.palace{
+    color: #a1c751;
+}
+
+a.palace:hover{
+    color: #a1c751;
+}
+
+h1,h2{
+    font-family: var(--titulos);
+    font-variant: small-caps;
+    font-weight: 100;
+    font-size: 35px;
+    
+}
+
+h3,p,a{
+    font-family: var(--parrafos);
+}
+
+a{
+    color: #e5dfd9;
+}
+
+svg{
+    height: 40px;
+    width: 40px;
+    font-family: var(--parrafos);
+    font-size: 16px;
+}
+
+.navegacion svg{
+position: absolute;
+top:0;
+right: 0;
+bottom: 0;
+width: 50px;
+padding: 16px 5px;
+}
+
