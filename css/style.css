@@ -85,10 +85,6 @@ a{
     color: white;
 }
 
-a{
-    color: #e5dfd9;
-}
-
 svg{
     height: 40px;
     width: 40px;
@@ -112,28 +108,23 @@ padding: 16px 5px;
 
 .bolsap {
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
   width: 90;
   padding: 27.5px 60px 0px 0px;
 }
 
 .bolsa{
     position: absolute;
-    top: 0;
     right: 0;
-    bottom: 0;
     width: 0;
     padding: 28px 175px 0px 0px;
 }
 
-.bolsa img{
+
+
+.bolsa{
     height: 13px;
     width: 14px;
 }
 
-.bag:hover{
-    color:#fff;
-    cursor: pointer;
-}
+/*Solucionar Div bolsa*/
