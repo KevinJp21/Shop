@@ -81,6 +81,11 @@ h3,p,a{
 }
 
 a{
+    font-size: 11px;
+    color: white;
+}
+
+a{
     color: #e5dfd9;
 }
 
@@ -100,3 +105,35 @@ width: 50px;
 padding: 16px 5px;
 }
 
+.navegacion svg:hover{
+    font-style: #fff;
+    cursor: pointer;
+}
+
+.bolsap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 90;
+  padding: 27.5px 60px 0px 0px;
+}
+
+.bolsa{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    padding: 28px 175px 0px 0px;
+}
+
+.bolsa img{
+    height: 13px;
+    width: 14px;
+}
+
+.bag:hover{
+    color:#fff;
+    cursor: pointer;
+}
