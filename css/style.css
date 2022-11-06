@@ -1,6 +1,6 @@
 @font-face {
     font-family: Futura;
-    src: url('fonts/Futura-Normal.ttf') format('truetype');
+    src: url('fonts/Futura3.woff') format('truetype');
 }
 
 @font-face {
@@ -26,34 +26,52 @@ a{
     
 }
 
+
 .contenedor-navegacion{
-    background-color: var(--negro-claro);
+    background: linear-gradient(to bottom, #1b1b1b, #1b1b1b04);
+    
     z-index: 5;
     flex-direction: column;
 
 }
+.contenedor-navegacion:hover{
+    transition: all .2s ease-in-out;
+    background-color: var(--negro-claro);
+}
 
-.contenedor-navegacion,.logo{
+.contenedor-navegacion{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 120px;
+}
+
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    height: 20px;
 }
 
 .logo{
-    color: var(--blanco);
-    height: 70px;
-    
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.logo img{
+height: 26px;
+width: 160px;
 }
 
 .navegacion a{
     font-weight: 600;
     font-size: 11px;
-    font-weight: 50;
+    font-weight: 100;
     padding: 0px 10px;
+    margin: 0px 10px;
 }
 
-nav{
-    height: 40px;
+.navegacion{
+    height: 10px;
 }
 
 .navegacion a:hover{
@@ -68,56 +86,58 @@ a.palace:hover{
     color: #a1c751;
 }
 
-h1,h2{
-    font-family: var(--titulos);
-    font-variant: small-caps;
-    font-weight: 100;
-    font-size: 35px;
-    
-}
-
-h3,p,a{
+h3{
     font-family: var(--parrafos);
 }
 
 a{
-    font-size: 11px;
+    font-size: 10px;
     color: #e5dfd9;
+    font-family: Futura,Arial, Helvetica, sans-serif;
 }
 
-svg{
-    height: 40px;
-    width: 40px;
-    font-family: var(--parrafos);
-    font-size: 16px;
+p{
+    font-size: 10px;
+    color: #e5dfd9;
+    font-family: Futura,Arial, Helvetica, sans-serif;  
 }
 
-.navegacion svg{
+.buscador svg{
+    height: 45px;
+    width: 45px;
+}
+
+.buscador{
 position: absolute;
-top:0;
-right: 0;
-bottom: 0;
-width: 50px;
-padding: 16px 5px;
+top:-2.5%;
+right: 0.5%;
+width: 3%;
+margin: 40px 9px 9px 0px;
 }
 
-.navegacion svg:hover{
+.buscador:hover{
     font-style: #fff;
     cursor: pointer;
 }
 
 .bolsap {
   position: absolute;
-  right: 0;
-  width: 90;
-  padding: 27.5px 60px 0px 0px;
+  right: 5.5em;
+  top: -2.3%;
+  padding: 8px;
+  margin: 45px 0px 9px ;
+}
+
+.bolsap:hover a{
+    color: var(--blanco);
 }
 
 .bolsa{
     position: absolute;
-    right: 0;
-    width: 0;
-    padding: 29.5px 150px 0px 0px;
+    right: 11em;
+    top: -2.3%;
+    padding: 8px;
+    margin: 48px 0px 9px ;
 }
 
 
@@ -127,4 +147,103 @@ padding: 16px 5px;
     width: 14px;
 }
 
-/*Solucionar Div bolsa*/
+.bolsa:hover{
+    color: #881014;
+}
+
+.sesion{
+    position: absolute;
+    right: 15em;
+    top: -2.3%;
+    padding: 8px;
+    margin: 45px 0px 9px ;
+}
+
+.sesion:hover a{
+    color: var(--blanco);
+}
+
+
+
+.heart{
+    height: 29px;
+    width: 30;
+    color:#e5dfd9c5;
+}
+
+.heart i{
+    position: absolute;
+    right: 13.5em;
+    top: -2.2%;
+    padding: 8px;
+    margin: 45px 0px 9px ;
+}
+
+.heart i:hover{
+    color: var(--blanco);
+}
+
+.number{
+    position: absolute;
+    left: 14em;
+    top: -2.9%;
+    padding: 8px;
+    margin: 45px 0px 9px ;
+}
+
+.number p:hover{
+    color: #fff;
+}
+
+.phone{
+    position: absolute;
+    left: 12.8em;
+    top: -2.1%;
+    padding: 8px;
+    margin: 45px 0px 9px ;
+    color: #e5dfd9;
+}
+
+.phone i:hover{
+    color: #fff;
+}
+
+.languaje{
+    position: absolute;
+    left: 8em;
+    top: -2.9%;
+    padding: 8px;
+    margin: 45px 0px 9px ;
+}
+
+.languaje p:hover{
+    color: #fff;
+}
+
+.location{
+    position: absolute;
+    left: 3em;
+    top: -2.9%;
+    padding: 8px;
+    margin: 45px 0px 9px ;
+}
+
+.dot{
+    position: absolute;
+    left: 2em;
+    top: -2.2%;
+    padding: 8px;
+    margin: 45px 0px 9px ;
+    color: #e5dfd9;
+}
+
+.dot:hover{
+    color: #fff;
+}
+
+.location p:hover{
+    color: #fff;
+}
+
+
+
