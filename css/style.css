@@ -31,7 +31,7 @@ a{
 .contenedor-navegacion{
     transition: all .2s ease-in-out;
     background: linear-gradient(to bottom, #1b1b1b, #1b1b1b04);
-    z-index: 5;
+    z-index: 6;
     flex-direction: column;
 
 }
@@ -44,6 +44,11 @@ a{
     display: flex;
     align-items: center;
     height: 120px;
+    
+}
+
+.contenedor-navegacion{
+    position: relative;
 }
 
 .contenido-navegacion{
@@ -64,7 +69,6 @@ width: 160px;
 }
 
 .navegacion a{
-    font-weight: 600;
     font-size: 11px;
     font-weight: 100;
     padding: 0px 10px;
@@ -247,79 +251,52 @@ margin: 40px 9px 9px 0px;
 }
 
 
-.slider{
-    width: 1280px;
-    height: auto;
-    margin: 50px auto 0;
+.container-slider {
+    position: relative; 
+    bottom: 120px;  
+    width: 100%;
+    margin: auto;
     overflow: hidden;
+}
+
+.slider_video,.slider_img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.slider{
+    display: flex;
+    width: 300%;
+    height: 780px;
+    margin-left: -100%;/*enfoca la primera imagen*/
+}
+
+.slider_section{
+    width: 100%;
+    
+    
+   
+}
+
+.slider_btn{
+    position: absolute;
+    color: #e5dfd9;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 100px;
+    font-weight: lighter;
+    cursor: pointer;
+    text-align: center;
+}
+
+.slider_btn-left{
+left: 10px;
+}
+
+.slider_btn-right{
+    right: 10px;
+    
     
 }
-
-.slider img,video{
-    display: flex;
-    padding: 0;
-    width: 400%;
-}
-
-.slider img,video{
-    list-style: none;
-    width: 100%;
-    animation: slide 8s infinite;
-}
-
-/* Slideshow container */
-.slider {
-    max-width: 1000px;
-    position: relative;
-    margin: auto; 
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }

@@ -84,35 +84,26 @@
                         </div>
                     </header>
                     
-                    <!-- Slideshow container -->
-<div class="slider">
+                    
+<div class="container-slider">
+    <div class="slider" id="slider">
+        <div class="slider_section">
+            <video src="assets/main.mp4" autoplay muted loop class="slider_video"></video>
+          </div>
+        
+          <div class="slider_section">
+            <img src="assets/Chica-Ventana.jpg" class="slider_img">
+          </div>
+        
+          <div class="slider_section">
+            <img src="assets/chica-con-bolso.jpg" class="slider_img">            
+          </div>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <video src="assets/main.mp4" autoplay muted loop></video>
     </div>
-  
-    <div class="mySlides fade">
-      <img src="assets/Chica-Ventana.jpg">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="assets/chica-con-bolso.jpg">
-      
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
+    <div class="slider_btn slider_btn-right" id="btn-right">&#62;</div>
+    <div class="slider_btn slider_btn-left" id="btn-left">&#60;</div>
+</div>
                         <script src="js/app.js"></script>
+                        <script src="js/slider.js"></script>
                     </body>
                 </html>
