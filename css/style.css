@@ -320,21 +320,4 @@ left: 10px;
 
 
 
-.btn-comprar{
-    padding: 12px 5px;
-    margin: 0px 10px 15px;
-    position: absolute;
-    border-radius: 0px;
-    font: var(--parrafos);
-    font-variant:small-caps;
-    font-weight: 100px;
-    top:60%;
-    right: 49%;
-    color: #ffffff;
-    background-color: #00000035;
-    
-    }
-
-
-
 
