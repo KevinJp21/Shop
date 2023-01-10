@@ -256,20 +256,19 @@ margin: 40px 9px 9px 0px;
     bottom: 120px;  
     width: 100%;
     margin: auto;
-    overflow: hidden;
 }
 
-.slider_video,.slider_img{
-    display: block;
+.slider_img{
+    
     width: 100%;
-    object-fit: cover;
-
+    Clip-path: inset(0px 0px 68px 0px);
+    filter: brightness(.8);
 }
 
 .slider{
     display: flex;
     width: 300%;
-    height: 780px;
+    height: 900px;
     margin-left: -100%;/*enfoca la primera imagen*/
 }
 
@@ -296,7 +295,46 @@ left: 10px;
 }
 
 .slider_btn-right{
-    right: 10px;
-    
-    
+    right: 10px;   
 }
+
+.slider{
+    opacity: 1;
+    -webkit-animation: flash 1s;
+    animation: flash 1s;
+
+}
+
+@-webkit-keyframes flash{
+    
+    0%{opacity: .3;}
+    100%{opacity:1;}
+}
+
+@keyframes flash{
+    0%{opacity: .3;}
+    100%{opacity:1;}
+}
+
+/*Continuar luego con el slider*/
+
+
+
+.btn-comprar{
+    padding: 12px 5px;
+    margin: 0px 10px 15px;
+    position: absolute;
+    border-radius: 0px;
+    font: var(--parrafos);
+    font-variant:small-caps;
+    font-weight: 100px;
+    top:60%;
+    right: 49%;
+    color: #ffffff;
+    background-color: #00000035;
+    
+    }
+
+
+
+
