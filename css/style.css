@@ -1,11 +1,16 @@
 @font-face {
     font-family: Futura;
-    src: url('fonts/Futura3.woff') format('truetype');
+    src: url('fonts/Futura-Normal.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Granjon;
     src: url('fonts/Granjon.otf') format('truetype');
+}
+
+@font-face{
+    font-family: FuturaLight;
+    src:url('fonts/Futura\ Light.otf') format('truetype')
 }
 :root {
     --verde: #00A149;
@@ -91,8 +96,8 @@ a.palace:hover{
     color: #a1c751;
 }
 
-h3{
-    font-family: var(--parrafos);
+h3,h2{
+    font-family:FuturaLight;
 }
 
 a{
@@ -256,6 +261,7 @@ margin: 40px 9px 9px 0px;
     bottom: 120px;  
     width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 .slider_img{
@@ -274,11 +280,47 @@ margin: 40px 9px 9px 0px;
 
 .slider_section{
     width: 100%;
-    
-    
-   
 }
 
+.slider_text-1{
+    position: relative;
+    bottom: 60%;
+    text-align: center;
+    font-size: 66px;
+    font-weight: lighter;
+    color: #e5dfd9;
+    
+}
+
+.slider_text-2{
+    position: relative;
+    bottom: 60%;
+    text-align: center;
+    font-size: 66px;
+    font-weight: lighter;
+    color: #e5dfd9;
+    
+}
+
+.slider_text-1-3{
+    position: relative;
+    bottom: 60%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #e5dfd9;
+    margin:0 0 8px; 
+}
+
+.slider_text-3{
+    position: relative;
+    bottom: 65%;
+    text-align: center;
+    font-size: 66px;
+    font-weight: lighter;
+    color: #e5dfd9;
+    
+}
 .slider_btn{
     position: absolute;
     color: #e5dfd9;
@@ -297,6 +339,8 @@ left: 10px;
 .slider_btn-right{
     right: 10px;   
 }
+
+
 
 .slider{
     opacity: 1;
