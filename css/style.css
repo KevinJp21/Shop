@@ -12,6 +12,12 @@
     font-family: FuturaLight;
     src:url('fonts/Futura\ Light.otf') format('truetype')
 }
+
+@font-face{
+    font-family: FuturaBold;
+    src:url('fonts/Futura\ Bold.otf') format('truetype')
+}
+
 :root {
     --verde: #00A149;
     --blanco: #fff;
@@ -332,6 +338,37 @@ margin: 40px 9px 9px 0px;
     text-align: center;
 }
 
+.btn-comprar-1{
+    font-family: Futura;
+    position:relative;
+    bottom: 65%;
+    left: 46%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100px;
+    color: #e5dfd9;
+    background-color: #1B1B1B;
+    border-style: none;
+    margin: 0px 10px 15px;
+    padding: 12px 37px;
+    
+}
+.btn-comprar-2{
+    font-family: Futura;
+    position:relative;
+    bottom: 70%;
+    left: 43%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100px;
+    color: #e5dfd9;
+    background-color: #1B1B1B;
+    border-style: none;
+    margin: 0px 10px 15px;
+    padding: 12px 37px;
+    
+}
+
 .slider_btn-left{
 left: 10px;
 }
@@ -360,7 +397,7 @@ left: 10px;
     100%{opacity:1;}
 }
 
-/*Continuar con los botones de comprar*/
+
 
 
 
