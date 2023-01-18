@@ -285,9 +285,11 @@ margin: 40px 9px 9px 0px;
 
 .slider{
     display: flex;
+    width: 300%;
     height: 900px;
     margin-left: -200%;/*enfoca la primera imagen*/
 }
+
 
 
 .text-slider{
